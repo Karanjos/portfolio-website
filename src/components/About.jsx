@@ -11,14 +11,16 @@ const About = () => {
           who is always looking for ways to improve my skills and knowledge.
         </p>
       </div>
-      <div className="absolute right-7 border-s-2 ps-10 top-3/4 left-1/2 md:mt-0 mt-10">
-        <h2 className="text-3xl font-bold my-4 text-blue-300">Education</h2>
-        <ul>
-          <li className="text-lg text-blue-200">
-            <h3>Dronacharya Group of Institutions</h3>
-            <p>Bachelor of Technology in Computer Science & Engineering</p>
-          </li>
-        </ul>
+      <div className="w-full flex justify-end">
+        <div className="border-s-2 ps-10 mt-10 justify-self-end">
+          <h2 className="text-3xl font-bold my-4 text-blue-300">Education</h2>
+          <ul>
+            <li className="text-lg text-blue-200">
+              <h3>Dronacharya Group of Institutions</h3>
+              <p>Bachelor of Technology in Computer Science & Engineering</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <section className="min-h-screen flex gap-8 bg-gradient-to-r from-blue-200 to-transparent -pt-20">
+      <section className="flex gap-8 bg-gradient-to-r from-blue-200 to-transparent -pt-20">
         <SocialMediaLinks />
         <div className="ms-20 w-full">
           <Outlet />
