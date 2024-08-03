@@ -45,28 +45,28 @@ const Contact = () => {
               name="name"
               id="name"
               placeholder="Enter your name here..."
-              className="w-72 px-2 py-3 rounded-full outline-none"
+              className="w-72 px-2 py-3 rounded-full outline-none bg-gradient-to-r from-slate-300 to-slate-200"
             />
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Enter your email here..."
-              className="w-72 px-2 py-3 rounded-full outline-none"
+              className="w-72 px-2 py-3 rounded-full outline-none bg-gradient-to-r from-slate-300 to-slate-200"
             />
             <textarea
               id="message"
               name="message"
               rows="5"
               placeholder="Enter your message here..."
-              className="w-72 px-2 py-3 rounded-3xl outline-none"
+              className="w-72 px-2 py-3 rounded-3xl outline-none bg-gradient-to-r from-slate-300 to-slate-200"
             ></textarea>
           </div>
 
           <button
             type="submit"
             onClick={handleSubmit}
-            className="w-24 col-start-2 py-2 bg-gradient-to-r from-stone-900 to-blue-200 rounded-full text-stone-900 font-bold"
+            className="w-40 col-start-2 py-2 bg-stone-950 text-stone-50 rounded-full font-bold"
           >
             Send
           </button>

@@ -11,7 +11,7 @@ const Skills = () => {
         </p>
 
         <ul className="grid grid-cols-2 py-8 px-12 gap-16 rounded-lg my-5">
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               React.js {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -20,7 +20,7 @@ const Skills = () => {
               Applications.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               Node.js {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -28,7 +28,7 @@ const Skills = () => {
               JavaScript runtime built on Chrome&apos;s V8 JavaScript engine.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               Express.js {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -36,7 +36,7 @@ const Skills = () => {
               Fast, unopinionated, minimalist web framework for Node.js.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               MongoDB {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -45,7 +45,7 @@ const Skills = () => {
               schemas.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               Tailwind CSS {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -53,7 +53,7 @@ const Skills = () => {
               Utility-first CSS framework for rapidly building custom designs.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               JavaScript {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -63,7 +63,7 @@ const Skills = () => {
             </h4>
           </li>
           {/** write skills like c, c++, c# , java , java development , SQL*/}
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               C {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -72,7 +72,7 @@ const Skills = () => {
               supporting structured programming.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               C++ {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -81,7 +81,7 @@ const Skills = () => {
               extension of the C programming language.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               C# {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -90,7 +90,7 @@ const Skills = () => {
               developed by Microsoft.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               Java {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -99,7 +99,7 @@ const Skills = () => {
               language.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               Java Development {<FaArrowRightLong className="mt-2" />}
             </h2>
@@ -108,7 +108,7 @@ const Skills = () => {
               the Java programming language.
             </h4>
           </li>
-          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-stone-500 to-blue-200">
+          <li className="rounded-xl shadow-lg shadow-slate-900 p-8 bg-gradient-to-r from-blue-200 to-blue-200">
             <h2 className="flex text-2xl font-bold text-stone-700 gap-2">
               SQL {<FaArrowRightLong className="mt-2" />}
             </h2>

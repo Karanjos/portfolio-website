@@ -10,7 +10,7 @@ const Project = () => {
       </p>
       {/* shadow-lg shadow-slate-700*/}
       <ul className="grid grid-cols-2  py-8 px-12 gap-16 rounded-lg my-5">
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-stone-500 to-blue-200">
+        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
           <h2 className="text-2xl font-bold my-4 text-stone-700">
             <Link to="">Placement Portal ( Full Stack Project )</Link>
           </h2>
@@ -25,7 +25,7 @@ const Project = () => {
             </p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-stone-500 to-blue-200">
+        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
           <h2 className="text-2xl font-bold my-4 text-stone-700">
             <Link to="">E-Commerce Website ( Full Stack Project )</Link>
           </h2>
@@ -40,7 +40,7 @@ const Project = () => {
             </p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-stone-500 to-blue-200">
+        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
           <h2 className="text-2xl font-bold my-4 text-stone-700">
             <Link to="">Weather App ( Reactjs Project )</Link>
           </h2>
@@ -55,7 +55,7 @@ const Project = () => {
             </p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-stone-500 to-blue-200">
+        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
           <h2 className="text-2xl font-bold my-4 text-stone-700">
             <Link to="">Password Generator Website ( JavaScript Project )</Link>
           </h2>
@@ -70,7 +70,7 @@ const Project = () => {
             </p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-stone-500 to-blue-200">
+        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
           <h2 className="text-2xl font-bold my-4 text-stone-700">
             <Link to="">Blog App ( Full Stack Project )</Link>
           </h2>
@@ -85,7 +85,7 @@ const Project = () => {
             </p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-stone-500 to-blue-200">
+        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
           <h2 className="text-2xl font-bold my-4 text-stone-700">
             <Link to="">E-Auth App ( MERN Stack Project )</Link>
           </h2>
