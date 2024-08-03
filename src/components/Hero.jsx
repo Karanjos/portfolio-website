@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="w-full text-stone-900">
+    <div className="w-full text-stone-900 ps-10">
       <div className="flex justify-between items-center h-full gap-8 ">
         <div className="flex flex-col gap-4 md:px-10">
           <div className="-mt-10">
@@ -14,7 +14,7 @@ const Hero = () => {
               I&apos;m a <span className="">Full stack software developer</span>
             </p>
           </div>
-          <Link to="" className="">
+          <Link to="/contact" className="">
             <span className="flex items-center py-1 gap-2 font-bold">
               Get in touch <FaArrowRightLong />
             </span>
