@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="w-full text-stone-900">
       <div className="flex justify-between items-center h-full gap-8 ">
         <div className="flex flex-col gap-4 md:px-10">
-          <div className="">
+          <div className="-mt-10">
             <h1 className="text-5xl font-semibold my-2">
               Hi, I&apos;m <span className="font-extrabold">Karan Joshi</span>
             </h1>
