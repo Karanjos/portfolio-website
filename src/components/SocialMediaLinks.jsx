@@ -5,7 +5,7 @@ import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 const SocialMediaLinks = () => {
   return (
     <div className="text-4xl mx-4 fixed left-2 top-64">
-      <ul className="flex flex-col gap-4 shadow-md shadow-slate-700 px-2 py-5 rounded-md text-stone-900">
+      <ul className="flex flex-col gap-4 shadow-md shadow-slate-700 px-2 py-5 rounded-md bg-stone-950 text-slate-50">
         <Link to="https://github.com/Karanjos" target="_blank">
           <li>
             <FaGithub />

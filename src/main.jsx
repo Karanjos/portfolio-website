@@ -8,22 +8,23 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Hero from "./components/Hero.jsx";
-import About from "./components/About.jsx";
-import Project from "./components/Project.jsx";
-import Skills from "./components/Skills.jsx";
-import Contact from "./components/Contact.jsx";
-import NotFound from "./components/NotFound.jsx";
+
+// import Hero from "./components/Hero.jsx";
+// import About from "./components/About.jsx";
+// import Project from "./components/Project.jsx";
+// import Skills from "./components/Skills.jsx";
+// import Contact from "./components/Contact.jsx";
+// import NotFound from "./components/NotFound.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="" element={<Hero />} />
+      {/* <Route path="" element={<Hero />} />
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Project />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} /> */}
     </Route>
   )
 );

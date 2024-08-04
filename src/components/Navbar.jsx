@@ -2,32 +2,32 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="text-stone-900 font-mono bg-gradient-to-r from-blue-200 to-transparent">
+    <header className="text-stone-950 font-mono bg-gradient-to-r from-blue-200 to-transparent">
       <nav className="flex justify-center items-center py-4">
         <Link to="/">
-          <div className="absolute top-6 left-2 text-2xl font-bold">
-            <h1 className="text-3xl font-semibold text-opacity-75  mx-4 p-2">
+          <div className="absolute top-5 left-2 text-2xl font-bold">
+            <h1 className="text-3xl font-bold text-opacity-75  mx-4 p-2">
               PORTFOLIO
-              <span className="animate-ping absolute top-4 left-20 inline-flex w-10 h-10 rounded-full bg-sky-400 opacity-75"></span>
+              <span className="animate-ping absolute top-2 left-20 inline-flex w-10 h-10 rounded-full bg-sky-400 opacity-75"></span>
             </h1>
           </div>
         </Link>
-        <ul className="flex gap-8 mx-4 font-semibold text-xl shadow-lg shadow-slate-700 px-12 py-5 rounded-xl bg-gradient-to-r from-slate-400 to-slate-400">
-          <Link to="/">
+        <ul className="fixed top-5 flex gap-8 mx-4 font-light text-xl shadow-lg shadow-stone-900 px-12 py-5 rounded-xl bg-stone-950 text-slate-50">
+          <a href="#home">
             <li>Home</li>
-          </Link>
-          <Link to="/about">
+          </a>
+          <a href="#about">
             <li>About</li>
-          </Link>
-          <Link to="/projects">
+          </a>
+          <a href="#projects">
             <li>Projects</li>
-          </Link>
-          <Link to="/skills">
+          </a>
+          <a href="#skills">
             <li>Skills</li>
-          </Link>
-          <Link to="/contact">
+          </a>
+          <a href="#contact">
             <li>Contact</li>
-          </Link>
+          </a>
         </ul>
       </nav>
     </header>

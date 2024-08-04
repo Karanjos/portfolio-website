@@ -51,9 +51,9 @@ export default function Contact() {
   });
 
   return (
-    <div className="flex justify-center items-center gap-20 w-full px-16 py-8 mt-10">
+    <div className="flex justify-center items-center gap-20 w-full px-16 py-8 mt-10" id="contact">
       <div className="">
-        <h1 className="text-4xl font-bold text-stone-900">
+        <h1 className="text-4xl font-bold text-stone-950">
           Let&apos;s connect!
         </h1>
         <p className="text-lg text-stone-700 mt-1">
@@ -62,7 +62,7 @@ export default function Contact() {
         </p>
       </div>
       <div className="my-5">
-        <h1 className="flex gap-2 items-center text-2xl font-bold text-stone-900 my-10">
+        <h1 className="flex gap-2 items-center text-2xl font-bold text-stone-950 my-10">
           Contact Me {<FaArrowRightLong />}
         </h1>
         <form
@@ -80,7 +80,7 @@ export default function Contact() {
                 type="text"
                 placeholder="Full Name"
                 autoComplete="false"
-                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-stone-900   focus:ring-1  ${
+                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-stone-950   focus:ring-1  ${
                   errors.name
                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                     : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
@@ -107,7 +107,7 @@ export default function Contact() {
                 placeholder="Email Address"
                 name="email"
                 autoComplete="false"
-                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-stone-900   focus:ring-1  ${
+                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-stone-950   focus:ring-1  ${
                   errors.email
                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                     : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
@@ -131,7 +131,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 placeholder="Your Message"
-                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-stone-900   rounded-md outline-none  h-36 focus:ring-1  ${
+                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-stone-950   rounded-md outline-none  h-36 focus:ring-1  ${
                   errors.message
                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                     : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
@@ -150,11 +150,11 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="w-40 col-start-2 py-4 font-semibold text-white transition-colors bg-stone-900 rounded-md hover:bg-stone-800 hover:text-gray-200 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
+            className="w-40 col-start-2 py-4 font-semibold text-white transition-colors bg-stone-950 rounded-md hover:bg-stone-900 hover:text-gray-200 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
           >
             {isSubmitting ? (
               <svg
-                className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
+                className="w-5 h-5 mx-auto text-white dark:text-stone-950 animate-spin"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

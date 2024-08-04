@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
-    <div className="w-full px-16 py-8 mt-10">
-      <h1 className="text-4xl font-bold text-stone-900">Projects</h1>
-      <p className="text-lg text-stone-700 mt-1">
+    <div className="w-full px-16 py-8 mt-10" id="projects">
+      <h1 className="text-4xl font-bold text-stone-950">Projects</h1>
+      <p className="text-lg text-stone-900 mt-1">
         Here are some of my projects:
       </p>
       {/* shadow-lg shadow-slate-700*/}
-      <ul className="grid grid-cols-2  py-8 px-12 gap-16 rounded-lg my-5 bg-stone-900 text-slate-50">
+      <ul className="grid grid-cols-2  py-12 px-12 gap-16 rounded-2xl my-5 bg-stone-950 text-slate-50">
         <li className="rounded-xl shadow-lg shadow-slate-100 p-4">
           <h2 className="text-2xl font-bold my-4">
             <Link to="">Placement Portal ( Full Stack Project )</Link>
@@ -61,7 +61,7 @@ const Project = () => {
             <img src="./bg.png" alt="" className="rounded-lg" width={200} />
             <p className="">Description of the project goes here.</p>
           </figure>
-        </li> 
+        </li>
         <li className="rounded-xl shadow-lg shadow-slate-100 p-4">
           <h2 className="text-2xl font-bold my-4">
             <Link to="">Blog App ( Full Stack Project )</Link>

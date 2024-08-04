@@ -2,14 +2,17 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Skills = () => {
   return (
-    <div className="flex justify-center items-center w-full px-16 py-8 mt-10">
+    <div
+      className="flex justify-center items-center w-full px-16 py-8 mt-10"
+      id="skills"
+    >
       <div>
-        <h1 className="text-4xl font-bold text-stone-900">Skills</h1>
-        <p className="text-lg text-stone-700 mt-1">
+        <h1 className="text-4xl font-bold text-stone-950">Skills</h1>
+        <p className="text-lg text-stone-900 mt-1">
           Here are some of my skills:
         </p>
 
-        <ul className="grid grid-cols-2 py-8 px-12 gap-16 rounded-lg my-5 bg-stone-900 text-slate-50">
+        <ul className="grid grid-cols-2 py-12 px-12 gap-16 rounded-2xl my-5 bg-stone-950 text-slate-50">
           <li className="rounded-xl shadow-lg shadow-slate-100 p-8">
             <h2 className="flex text-2xl font-bold gap-2">
               React.js {<FaArrowRightLong className="mt-2" />}
