@@ -46,6 +46,7 @@ const Navbar = () => {
               className={`${
                 isOpen ? "flex" : "hidden"
               } flex-col gap-4 font-light text-xl shadow-lg shadow-stone-900 px-12 py-5 rounded-xl bg-stone-950 text-slate-50 md:hidden`}
+              onClick={() => setIsOpen(!isOpen)}
             >
               <a href="#home">
                 <li>Home</li>
