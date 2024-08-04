@@ -34,10 +34,10 @@ const Navbar = () => {
             <li>Contact</li>
           </a>
         </ul>
-        <div className="fixed top-5 right-2 z-50">
+        <div className="fixed top-10 right-5 z-50">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="fixed top-3 right-2"
+            className="fixed top-4 right-3 text-2xl text-slate-50 md:hidden"
           >
             <FaBars />
           </button>

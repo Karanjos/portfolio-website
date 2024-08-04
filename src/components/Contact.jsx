@@ -52,7 +52,7 @@ export default function Contact() {
 
   return (
     <div
-      className="flex justify-center items-center flex-col md:flex-row md:gap-20 gap-2 w-full md:px-16 px-4 py-8 mt-10"
+      className="flex mb-20 justify-center items-center flex-col md:flex-row md:gap-20 gap-2 w-full md:px-16 px-1 py-8 mt-10"
       id="contact"
     >
       <div className="">
@@ -70,9 +70,9 @@ export default function Contact() {
         </h1>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="grid grid-cols-2 md:gap-16 gap-0 text-stone-950 text-nowrap"
+          className="grid md:grid-cols-2 grid-cols-1 md:gap-16 gap-0 text-stone-950 text-nowrap"
         >
-          <div className="flex flex-col gap-12 font-semibold text-lg">
+          <div className="flex-col gap-12 font-semibold text-lg hidden md:flex">
             <label htmlFor="name">Name :</label>
             <label htmlFor="email">Email :</label>
             <label htmlFor="message">Message :</label>
@@ -153,7 +153,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="w-full col-start-2 py-4 font-semibold text-white transition-colors bg-stone-950 rounded-md hover:bg-stone-900 hover:text-gray-200 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
+            className="w-full md:col-start-2 py-4 font-semibold text-white transition-colors bg-stone-950 rounded-md hover:bg-stone-900 hover:text-gray-200 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
           >
             {isSubmitting ? (
               <svg
