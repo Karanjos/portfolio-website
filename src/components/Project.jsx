@@ -9,95 +9,83 @@ const Project = () => {
         Here are some of my projects:
       </p>
       {/* shadow-lg shadow-slate-700*/}
-      <ul className="grid grid-cols-2  py-8 px-12 gap-16 rounded-lg my-5">
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
-          <h2 className="text-2xl font-bold my-4 text-stone-700">
+      <ul className="grid grid-cols-2  py-8 px-12 gap-16 rounded-lg my-5 bg-stone-900 text-slate-50">
+        <li className="rounded-xl shadow-lg shadow-slate-100 p-4">
+          <h2 className="text-2xl font-bold my-4">
             <Link to="">Placement Portal ( Full Stack Project )</Link>
           </h2>
-          <h4 className="flex items-center gap-2 text-stone-700">
+          <h4 className="flex items-center gap-2">
             Technologies used {<FaArrowRightLong />} React, Node.js, Express,
             MongoDB, Tailwind CSS, and Render for deployment.
           </h4>
           <figure>
             <img src="./bg.png" alt="" className="rounded-lg" width={200} />
-            <p className="text-stone-900">
-              Description of the project goes here.
-            </p>
+            <p className="">Description of the project goes here.</p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
-          <h2 className="text-2xl font-bold my-4 text-stone-700">
+        <li className="rounded-xl shadow-lg shadow-slate-100 p-4">
+          <h2 className="text-2xl font-bold my-4">
             <Link to="">E-Commerce Website ( Full Stack Project )</Link>
           </h2>
-          <h4 className="flex items-center gap-2 text-stone-700">
+          <h4 className="flex items-center gap-2">
             Technologies used {<FaArrowRightLong />} React, Node.js, Express,
             MongoDB, Tailwind CSS, and Render for deployment.
           </h4>
           <figure>
             <img src="./bg.png" alt="" className="rounded-lg" width={200} />
-            <p className="text-stone-900">
-              Description of the project goes here.
-            </p>
+            <p className="">Description of the project goes here.</p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
-          <h2 className="text-2xl font-bold my-4 text-stone-700">
+        <li className="rounded-xl shadow-lg shadow-slate-900 p-4">
+          <h2 className="text-2xl font-bold my-4">
             <Link to="">Weather App ( Reactjs Project )</Link>
           </h2>
-          <h4 className="flex items-center gap-2 text-stone-700">
+          <h4 className="flex items-center gap-2">
             Technologies used {<FaArrowRightLong />} Reactjs, Node.js, Express,
             Tailwind CSS.
           </h4>
           <figure>
             <img src="./bg.png" alt="" className="rounded-lg" width={200} />
-            <p className="text-stone-900">
-              Description of the project goes here.
-            </p>
+            <p className="">Description of the project goes here.</p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
-          <h2 className="text-2xl font-bold my-4 text-stone-700">
+        <li className="rounded-xl shadow-lg shadow-slate-100 p-4">
+          <h2 className="text-2xl font-bold my-4">
             <Link to="">Password Generator Website ( JavaScript Project )</Link>
           </h2>
-          <h4 className="flex items-center gap-2 text-stone-700">
+          <h4 className="flex items-center gap-2">
             Technologies used {<FaArrowRightLong />} React, Node.js, Express,
             JavaScript, Tailwind CSS.
           </h4>
           <figure>
             <img src="./bg.png" alt="" className="rounded-lg" width={200} />
-            <p className="text-stone-900">
-              Description of the project goes here.
-            </p>
+            <p className="">Description of the project goes here.</p>
           </figure>
-        </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
-          <h2 className="text-2xl font-bold my-4 text-stone-700">
+        </li> 
+        <li className="rounded-xl shadow-lg shadow-slate-100 p-4">
+          <h2 className="text-2xl font-bold my-4">
             <Link to="">Blog App ( Full Stack Project )</Link>
           </h2>
-          <h4 className="flex items-center gap-2 text-stone-700">
+          <h4 className="flex items-center gap-2">
             Technologies used {<FaArrowRightLong />} React, Node.js, Express,
             MongoDB, Tailwind CSS, and Render for deployment.
           </h4>
           <figure>
             <img src="./bg.png" alt="" className="rounded-lg" width={200} />
-            <p className="text-stone-900">
-              Description of the project goes here.
-            </p>
+            <p className="">Description of the project goes here.</p>
           </figure>
         </li>
-        <li className="rounded-xl shadow-lg shadow-slate-900 p-4 bg-gradient-to-r from-blue-200 to-blue-200">
-          <h2 className="text-2xl font-bold my-4 text-stone-700">
+        <li className="rounded-xl shadow-lg shadow-slate-100 p-4">
+          <h2 className="text-2xl font-bold my-4">
             <Link to="">E-Auth App ( MERN Stack Project )</Link>
           </h2>
-          <h4 className="flex items-center gap-2 text-stone-700">
+          <h4 className="flex items-center gap-2">
             Technologies used {<FaArrowRightLong />} React, Node.js, Express,
             MongoDB, Tailwind CSS, and Render for deployment.
           </h4>
           <figure>
             <img src="./bg.png" alt="" className="rounded-lg" width={200} />
-            <p className="text-stone-900">
-              Description of the project goes here.
-            </p>
+            <p className="">Description of the project goes here.</p>
           </figure>
         </li>
       </ul>

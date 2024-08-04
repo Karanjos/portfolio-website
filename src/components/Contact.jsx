@@ -1,22 +1,55 @@
-// import nodemailer from "nodemailer";
-
+// This example uses `@web3forms/react` plugin and tailwindcss for css styling
+import { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
+import Swal from "sweetalert2";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const Contact = () => {
-  // const transporter = nodemailer.createTransport({
-  //   host: "smtp.ethereal.email",
-  //   port: 587,
-  //   secure: false, // Use `true` for port 465, `false` for all other ports
-  //   auth: {
-  //     user: "maddison53@ethereal.email",
-  //     pass: "jn7jnAPss4f63QBp6D",
-  //   },
-  // });
+export default function Contact() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    watch,
+    control,
+    setValue,
+    formState: { errors, isSubmitSuccessful, isSubmitting },
+  } = useForm({
+    mode: "onTouched",
+  });
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [message, setMessage] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Form submitted successfully!");
-  };
+  // Please update the Access Key in the .env
+  const apiKey = "56fb009f-993e-4c4c-b30e-909fd16fe131";
+
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: apiKey,
+    settings: {
+      from_name: "Acme Inc",
+      subject: "New Contact Message from your Website",
+    },
+    onSuccess: (msg, data) => {
+      setIsSuccess(true);
+      setMessage(msg);
+      Swal.fire({
+        title: "Message sent!",
+        text: "I will get Back to you soon!",
+        icon: "success",
+      });
+      reset();
+    },
+    onError: (msg, data) => {
+      setIsSuccess(false);
+      setMessage(msg);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
+    },
+  });
+
   return (
     <div className="flex justify-center items-center gap-20 w-full px-16 py-8 mt-10">
       <div className="">
@@ -28,51 +61,134 @@ const Contact = () => {
           possible.
         </p>
       </div>
-
       <div className="my-5">
         <h1 className="flex gap-2 items-center text-2xl font-bold text-stone-900 my-10">
           Contact Me {<FaArrowRightLong />}
         </h1>
-        <form className="grid grid-cols-2 gap-16 text-stone-950 w-1/3 text-nowrap">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="grid grid-cols-2 gap-16 text-stone-950 w-1/3 text-nowrap"
+        >
           <div className="flex flex-col gap-12 font-semibold text-lg">
             <label htmlFor="name">Name :</label>
             <label htmlFor="email">Email :</label>
             <label htmlFor="message">Message :</label>
           </div>
           <div className="flex flex-col gap-4">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your name here..."
-              className="w-72 px-2 py-3 rounded-full outline-none bg-gradient-to-r from-slate-300 to-slate-200"
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email here..."
-              className="w-72 px-2 py-3 rounded-full outline-none bg-gradient-to-r from-slate-300 to-slate-200"
-            />
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Enter your message here..."
-              className="w-72 px-2 py-3 rounded-3xl outline-none bg-gradient-to-r from-slate-300 to-slate-200"
-            ></textarea>
-          </div>
+            <div className="mb-5 w-72">
+              <input
+                type="text"
+                placeholder="Full Name"
+                autoComplete="false"
+                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-stone-900   focus:ring-1  ${
+                  errors.name
+                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
+                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                }`}
+                {...register("name", {
+                  required: "Full name is required",
+                  maxLength: 80,
+                })}
+              />
+              {errors.name && (
+                <div className="mt-1 text-red-600">
+                  <small>{errors.name.message}</small>
+                </div>
+              )}
+            </div>
 
+            <div className="mb-5 w-72">
+              <label htmlFor="email_address" className="sr-only">
+                Email Address
+              </label>
+              <input
+                id="email_address"
+                type="email"
+                placeholder="Email Address"
+                name="email"
+                autoComplete="false"
+                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-stone-900   focus:ring-1  ${
+                  errors.email
+                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
+                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                }`}
+                {...register("email", {
+                  required: "Enter your email",
+                  pattern: {
+                    value: /^\S+@\S+$/i,
+                    message: "Please enter a valid email",
+                  },
+                })}
+              />
+              {errors.email && (
+                <div className="mt-1 text-red-600">
+                  <small>{errors.email.message}</small>
+                </div>
+              )}
+            </div>
+
+            <div className="mb-3 w-72">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                className={`w-full px-4 py-3 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-stone-900   rounded-md outline-none  h-36 focus:ring-1  ${
+                  errors.message
+                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
+                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                }`}
+                {...register("message", {
+                  required: "Enter your Message",
+                })}
+              />
+              {errors.message && (
+                <div className="mt-1 text-red-600">
+                  {" "}
+                  <small>{errors.message.message}</small>
+                </div>
+              )}
+            </div>
+          </div>
           <button
             type="submit"
-            onClick={handleSubmit}
-            className="w-40 col-start-2 py-2 bg-stone-950 text-stone-50 rounded-full font-bold"
+            className="w-40 col-start-2 py-4 font-semibold text-white transition-colors bg-stone-900 rounded-md hover:bg-stone-800 hover:text-gray-200 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
           >
-            Send
+            {isSubmitting ? (
+              <svg
+                className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+            ) : (
+              "Send Message"
+            )}
           </button>
         </form>
       </div>
+      {/* {isSubmitSuccessful && isSuccess && (
+        <div className="mt-3 text-sm text-center text-green-500">
+          {message || "Success. Message sent successfully"}
+        </div>
+      )}
+      {isSubmitSuccessful && !isSuccess && (
+        <div className="mt-3 text-sm text-center text-red-500">
+          {message || "Something went wrong. Please try later."}
+        </div>
+      )} */}
     </div>
   );
-};
-export default Contact;
+}
