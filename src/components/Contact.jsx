@@ -51,7 +51,10 @@ export default function Contact() {
   });
 
   return (
-    <div className="flex justify-center items-center gap-20 w-full px-16 py-8 mt-10" id="contact">
+    <div
+      className="flex justify-center items-center flex-col md:flex-row md:gap-20 gap-2 w-full md:px-16 px-4 py-8 mt-10"
+      id="contact"
+    >
       <div className="">
         <h1 className="text-4xl font-bold text-stone-950">
           Let&apos;s connect!
@@ -67,7 +70,7 @@ export default function Contact() {
         </h1>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="grid grid-cols-2 gap-16 text-stone-950 w-1/3 text-nowrap"
+          className="grid grid-cols-2 md:gap-16 gap-0 text-stone-950 text-nowrap"
         >
           <div className="flex flex-col gap-12 font-semibold text-lg">
             <label htmlFor="name">Name :</label>
@@ -75,7 +78,7 @@ export default function Contact() {
             <label htmlFor="message">Message :</label>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="mb-5 w-72">
+            <div className="mb-5 w-full">
               <input
                 type="text"
                 placeholder="Full Name"
@@ -87,7 +90,7 @@ export default function Contact() {
                 }`}
                 {...register("name", {
                   required: "Full name is required",
-                  maxLength: 80,
+                  maxLength: 500,
                 })}
               />
               {errors.name && (
@@ -97,7 +100,7 @@ export default function Contact() {
               )}
             </div>
 
-            <div className="mb-5 w-72">
+            <div className="mb-5 w-full">
               <label htmlFor="email_address" className="sr-only">
                 Email Address
               </label>
@@ -127,7 +130,7 @@ export default function Contact() {
               )}
             </div>
 
-            <div className="mb-3 w-72">
+            <div className="mb-3 w-full">
               <textarea
                 name="message"
                 placeholder="Your Message"
@@ -150,7 +153,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="w-40 col-start-2 py-4 font-semibold text-white transition-colors bg-stone-950 rounded-md hover:bg-stone-900 hover:text-gray-200 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
+            className="w-full col-start-2 py-4 font-semibold text-white transition-colors bg-stone-950 rounded-md hover:bg-stone-900 hover:text-gray-200 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
           >
             {isSubmitting ? (
               <svg

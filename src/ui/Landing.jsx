@@ -13,7 +13,7 @@ const Landing = () => {
       <Navbar />
       <section className="flex items-center gap-8 bg-gradient-to-r from-blue-200 to-transparent -pt-20">
         <SocialMediaLinks />
-        <div className="ms-20 w-full">
+        <div className="md:ms-20 ms-10 w-full">
           <Hero />
           <About />
           <Project />
